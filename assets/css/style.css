@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    background-color: green;
+}
+
+.container > header,aside, footer, .content {
+    padding: 20px;
+}
+
+.content{
+    background-color: brown;
+    padding-bottom: 558px;
+}
+
+aside{
+    background-color: gold;
+}
+
+footer{
+    background-color: blue;
+}
+
+@media screen and (min-width:800px) {
+    main{
+        display: flex;
+    }
+
+    .content{
+        flex: 2;
+    }
+
+    aside{
+        flex: 1;
+    }
+    
+}
